@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "signals": "Señales",
+    "trades": "Operaciones",
+    "portfolio": "Portafolio",
+    "subscription": "Suscripción",
+    "settings": "Configuración",
+    "dashboard": "Panel",
+    "login": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
+    "signup": "Registrarse"
+  },
+  "home": {
+    "title": "Bienvenido a Turtlevale",
+    "subtitle": "Señales Profesionales de Trading Tortuga para la Libertad Financiera",
+    "description": "Obtén señales de trading disciplinadas en mercados de Índices, Acciones, Forex y Crypto. Únete a miles de traders logrando libertad financiera a través del trading sistemático.",
+    "getStarted": "Comenzar",
+    "features": {
+      "signals": "Señales de Trading Diarias",
+      "signalsDesc": "Generadas diariamente a las 5 PM ET usando metodología probada de Trading Tortuga",
+      "markets": "4 Categorías de Mercado",
+      "marketsDesc": "Cobertura en mercados de Índices, Acciones, Forex y Criptomonedas",
+      "notifications": "Notificaciones Push",
+      "notificationsDesc": "Alertas instantáneas para usuarios premium, retraso de 1 hora para tier gratuito"
+    }
+  },
+  "signals": {
+    "title": "Señales de Trading",
+    "loading": "Cargando señales...",
+    "noSignals": "No hay señales disponibles",
+    "trial": {
+      "remaining": "Señales de prueba restantes: {{count}}",
+      "expired": "Prueba expirada. Por favor actualiza para continuar."
+    },
+    "filters": {
+      "all": "Todos los Mercados",
+      "indices": "Índices",
+      "stocks": "Acciones",
+      "forex": "Forex",
+      "crypto": "Crypto"
+    },
+    "signal": {
+      "buy": "COMPRAR",
+      "sell": "VENDER",
+      "price": "Precio: ${{price}}",
+      "stopLoss": "Stop Loss: ${{price}}",
+      "target": "Objetivo: ${{price}}",
+      "timestamp": "Generado: {{time}}"
+    }
+  },
+  "trades": {
+    "title": "Mis Operaciones",
+    "open": "Operaciones Abiertas",
+    "closed": "Operaciones Cerradas",
+    "noTrades": "No se encontraron operaciones",
+    "openTrade": "Abrir Operación",
+    "closeTrade": "Cerrar Operación",
+    "profit": "Ganancia: ${{amount}}",
+    "loss": "Pérdida: ${{amount}}"
+  },
+  "portfolio": {
+    "title": "Rendimiento del Portafolio",
+    "balance": "Balance: ${{amount}}",
+    "performance": "Rendimiento: {{percent}}%",
+    "trades": "Operaciones Totales: {{count}}",
+    "winRate": "Tasa de Ganancia: {{percent}}%",
+    "indices": "Portafolio de Índices",
+    "stocks": "Portafolio de Acciones",
+    "forex": "Portafolio de Forex",
+    "crypto": "Portafolio de Crypto",
+    "allMarkets": "Portafolio de Todos los Mercados"
+  },
+  "subscription": {
+    "title": "Elige Tu Plan",
+    "free": {
+      "title": "Gratuito",
+      "price": "$0",
+      "features": [
+        "Acceso a 1 categoría de mercado",
+        "6 señales de prueba",
+        "Notificaciones con retraso de 1 hora"
+      ]
+    },
+    "individual": {
+      "title": "Mercado Individual",
+      "price": "$10/mes",
+      "features": [
+        "Acceso a 1 mercado elegido",
+        "Señales ilimitadas",
+        "Notificaciones instantáneas"
+      ]
+    },
+    "fullAccess": {
+      "title": "Acceso Completo",
+      "price": "$30/mes",
+      "features": [
+        "Acceso a todos los mercados",
+        "Señales ilimitadas",
+        "Notificaciones instantáneas",
+        "Soporte prioritario"
+      ]
+    },
+    "annual": "Anual (2 meses gratis)",
+    "subscribe": "Suscribirse",
+    "current": "Plan Actual"
+  },
+  "auth": {
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes una cuenta?",
+    "hasAccount": "¿Ya tienes una cuenta?",
+    "loginSuccess": "Inicio de sesión exitoso",
+    "signupSuccess": "Cuenta creada exitosamente",
+    "error": "Error de autenticación"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "retry": "Reintentar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "confirm": "Confirmar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "language": "Idioma",
+    "currency": "Moneda"
+  }
+} 

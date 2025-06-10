@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Home",
+    "signals": "Segnali",
+    "trades": "Trading",
+    "portfolio": "Portafoglio",
+    "subscription": "Abbonamento",
+    "settings": "Impostazioni",
+    "dashboard": "Dashboard",
+    "login": "Accedi",
+    "logout": "Esci",
+    "signup": "Registrati"
+  },
+  "home": {
+    "title": "Benvenuto su Turtlevale",
+    "subtitle": "Segnali Professionali di Turtle Trading per la Libertà Finanziaria",
+    "description": "[Italian description placeholder]",
+    "getStarted": "Inizia"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "language": "Lingua"
+  }
+} 

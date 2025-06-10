@@ -1,0 +1,17 @@
+{
+  "name": "turtlevale",
+  "version": "1.0.0",
+  "description": "Turtlevale - Turtle Trading Signals Platform",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd client && npm install && cd ../functions && npm install",
+    "build": "cd client && npm run build",
+    "deploy": "firebase deploy",
+    "start": "cd client && npm start",
+    "emulator": "firebase emulators:start"
+  },
+  "keywords": ["turtle trading", "signals", "react", "firebase"],
+  "author": "Turtlevale Team",
+  "license": "MIT",
+  "workspaces": ["client", "functions"]
+} 

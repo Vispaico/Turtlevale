@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "home": "Início",
+    "signals": "Sinais",
+    "trades": "Negociações",
+    "portfolio": "Portfólio",
+    "subscription": "Assinatura",
+    "settings": "Configurações",
+    "dashboard": "Painel",
+    "login": "Entrar",
+    "logout": "Sair",
+    "signup": "Cadastrar"
+  },
+  "home": {
+    "title": "Bem-vindo ao Turtlevale",
+    "subtitle": "Sinais Profissionais de Trading Tartaruga para Liberdade Financeira",
+    "description": "[Portuguese description placeholder]",
+    "getStarted": "Começar"
+  },
+  "signals": {
+    "title": "Sinais de Trading",
+    "loading": "Carregando sinais...",
+    "noSignals": "Nenhum sinal disponível"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro",
+    "language": "Idioma"
+  }
+}
