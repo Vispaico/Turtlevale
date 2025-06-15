@@ -25,6 +25,7 @@ import { useTranslation } from 'react-i18next';
 import { format } from 'date-fns';
 import { auth, db } from '../firebase';
 import Ads from './Ads';
+import { Alert as MuiAlert } from '@material-ui/lab';
 
 const Signals = () => {
   const { t } = useTranslation();
@@ -183,12 +184,12 @@ const Signals = () => {
     const remainingTrials = Math.max(0, 6 - trialSignalsUsed);
 
     return (
-      <Alert severity={remainingTrials > 0 ? 'info' : 'warning'} sx={{ marginBottom: 2 }}>
+      <MuiAlert severity={remainingTrials > 0 ? 'info' : 'warning'} sx={{ marginBottom: 2 }}>
         {remainingTrials > 0 ? 
           t('signals.trial.remaining', { count: remainingTrials }) :
           t('signals.trial.expired')
         }
-      </Alert>
+      </MuiAlert>
     );
   };
 
@@ -211,9 +212,9 @@ const Signals = () => {
       {renderTrialCounter()}
 
       {error && (
-        <Alert severity="error" sx={{ marginBottom: 2 }}>
+        <MuiAlert severity="error" sx={{ marginBottom: 2 }}>
           {error}
-        </Alert>
+        </MuiAlert>
       )}
 
       {/* Market Tabs */}
@@ -229,9 +230,9 @@ const Signals = () => {
 
       {/* Signals Grid */}
       {signals.length === 0 ? (
-        <Alert severity="info">
+        <MuiAlert severity="info">
           {t('signals.noSignals')}
-        </Alert>
+        </MuiAlert>
       ) : (
         <Grid container spacing={3}>
           {signals.map((signal, index) => (

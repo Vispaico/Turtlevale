@@ -1,14 +1,14 @@
-# 🐢 TurtleTrader - Professional Algorithmic Trading Platform
+# 🐢 Turtelli - Professional Algorithmic Trading Platform
 
 > **Systematic Trading Excellence** - A complete Firebase-powered trading system implementing the legendary Turtle Trading methodology.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Platform-blue)](https://turtletrader-295e8.web.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Platform-blue)](https://turtelli.com)
 [![Firebase](https://img.shields.io/badge/Firebase-Functions%20%26%20Hosting-orange)](https://firebase.google.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue)](https://typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.x-61dafb)](https://reactjs.org/)
 
 ## 🌐 Live Platform
-**Website:** [https://turtletrader-295e8.web.app](https://turtletrader-295e8.web.app)
+**Website:** [https://turtelli.com](https://turtelli.com)
 
 ## 📊 What is Turtle Trading?
 
@@ -75,8 +75,8 @@ The **Turtle Trading System** is one of the most famous algorithmic trading stra
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/Vispaico/Turtlevale.git
-cd Turtlevale
+git clone https://github.com/Vispaico/Turtelli.git
+cd Turtelli
 ```
 
 ### 2. Install Dependencies
@@ -128,7 +128,7 @@ GET https://us-central1-turtletrader-295e8.cloudfunctions.net/healthCheck
 {
   "status": "OK",
   "timestamp": "2025-01-10T18:09:11.930Z",
-  "service": "Turtlevale Functions"
+        "service": "Turtelli Functions"
 }
 ```
 
@@ -185,7 +185,7 @@ interface TurtleSignal {
 
 | Service | Status | URL |
 |---------|--------|-----|
-| **Website** | ✅ Live | [turtletrader-295e8.web.app](https://turtletrader-295e8.web.app) |
+| **Website** | ✅ Live | [turtelli.com](https://turtelli.com) |
 | **Functions** | ✅ Deployed | [View Console](https://console.firebase.google.com/project/turtletrader-295e8/functions) |
 | **Database** | ✅ Active | Firestore Real-time |
 | **Scheduler** | ✅ Running | Daily 5PM ET |
@@ -215,6 +215,6 @@ This software is for educational and research purposes only. Trading involves su
 
 ---
 
-**Built with ❤️ by the TurtleTrader Team**
+**Built with ❤️ by the Turtelli Team**
 
 *Systematic Trading • Quantitative Analysis • Modern Technology* 

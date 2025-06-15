@@ -3,16 +3,18 @@ import { Navigate } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { CircularProgress, Box } from '@material-ui/core';
+import { useAuth } from '../contexts/AuthContext';
 
-const ProtectedRoute = ({ children, user, adminRequired = false }) => {
+const ProtectedRoute = ({ children, adminRequired = false }) => {
+  const { currentUser } = useAuth();
   const [isAdmin, setIsAdmin] = useState(false);
   const [loading, setLoading] = useState(adminRequired);
 
   useEffect(() => {
     const checkAdminStatus = async () => {
-      if (adminRequired && user) {
+      if (adminRequired && currentUser) {
         try {
-          const userDoc = await getDoc(doc(db, 'users', user.uid));
+          const userDoc = await getDoc(doc(db, 'users', currentUser.uid));
           if (userDoc.exists()) {
             const userData = userDoc.data();
             setIsAdmin(userData.role === 'admin');
@@ -25,9 +27,9 @@ const ProtectedRoute = ({ children, user, adminRequired = false }) => {
     };
 
     checkAdminStatus();
-  }, [user, adminRequired]);
+  }, [currentUser, adminRequired]);
 
-  if (!user) {
+  if (!currentUser) {
     return <Navigate to="/login" />;
   }
 

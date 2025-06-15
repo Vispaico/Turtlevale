@@ -109,7 +109,7 @@ const Home = () => {
           gutterBottom
           sx={{ marginBottom: 6 }}
         >
-          Why Choose Turtlevale?
+          Why Choose Turtelli?
         </Typography>
         
         <Grid container spacing={4}>
@@ -203,7 +203,7 @@ const Home = () => {
             variant="body1"
             sx={{ marginBottom: 3, fontSize: '1.1rem' }}
           >
-            Join thousands of traders using Turtlevale to achieve financial freedom through disciplined trading.
+            Join thousands of traders using Turtelli to achieve financial freedom through disciplined trading.
           </Typography>
           <Button
             variant="contained"

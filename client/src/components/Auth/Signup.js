@@ -6,15 +6,15 @@ import {
   Button,
   Typography,
   Box,
-  Alert,
   Link as MUILink,
   CircularProgress,
 } from '@material-ui/core';
 import { Link, useNavigate } from 'react-router-dom';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
 import { useTranslation } from 'react-i18next';
 import { auth, db } from '../../firebase';
+import { Alert } from '@material-ui/lab';
 
 const Signup = () => {
   const { t, i18n } = useTranslation();
@@ -79,6 +79,47 @@ const Signup = () => {
       navigate('/');
     } catch (error) {
       setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleGoogleSignUp = async () => {
+    setLoading(true);
+    setError('');
+
+    try {
+      const provider = new GoogleAuthProvider();
+      provider.addScope('email');
+      provider.addScope('profile');
+      
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+
+      // Create user document in Firestore (or update if exists)
+      await setDoc(doc(db, 'users', user.uid), {
+        email: user.email,
+        displayName: user.displayName,
+        photoURL: user.photoURL,
+        createdAt: new Date(),
+        language: i18n.language,
+        role: 'user',
+        subscription: {
+          type: 'free',
+          markets: [],
+          isActive: true,
+          signalsUsed: 0,
+          signalsLimit: 6,
+          createdAt: new Date()
+        },
+        fcmToken: null,
+      }, { merge: true }); // Use merge to avoid overwriting existing data
+
+      console.log('Google sign-up successful:', user);
+      navigate('/');
+    } catch (error) {
+      console.error('Google sign-up error:', error);
+      setError('Failed to sign up with Google. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -153,6 +194,30 @@ const Signup = () => {
               sx={{ mt: 3, mb: 2, height: 48 }}
             >
               {loading ? <CircularProgress size={24} /> : t('auth.signup')}
+            </Button>
+
+            <Button
+              fullWidth
+              variant="outlined"
+              disabled={loading}
+              onClick={handleGoogleSignUp}
+              sx={{ 
+                mb: 2, 
+                height: 48,
+                border: '2px solid #4285f4',
+                color: '#4285f4',
+                '&:hover': {
+                  backgroundColor: '#4285f4',
+                  color: 'white'
+                }
+              }}
+            >
+              <img 
+                src="https://developers.google.com/identity/images/g-logo.png" 
+                alt="Google" 
+                style={{ width: 20, height: 20, marginRight: 8 }}
+              />
+              Sign up with Google
             </Button>
             
             <Box textAlign="center">

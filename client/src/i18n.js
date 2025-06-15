@@ -14,7 +14,7 @@ import fr from './locales/fr.json';
 const detectLanguage = async () => {
   try {
     // First try to get language from localStorage
-    const savedLanguage = localStorage.getItem('turtlevale-language');
+    const savedLanguage = localStorage.getItem('turtelli-language');
     if (savedLanguage) return savedLanguage;
 
     // Try to detect from geolocation

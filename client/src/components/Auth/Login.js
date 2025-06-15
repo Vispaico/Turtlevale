@@ -6,14 +6,14 @@ import {
   Button,
   Typography,
   Box,
-  Alert,
   Link as MUILink,
   CircularProgress,
 } from '@material-ui/core';
 import { Link, useNavigate } from 'react-router-dom';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { useTranslation } from 'react-i18next';
 import { auth } from '../../firebase';
+import { Alert } from '@material-ui/lab';
 
 const Login = () => {
   const { t } = useTranslation();
@@ -42,6 +42,26 @@ const Login = () => {
       navigate('/');
     } catch (error) {
       setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleGoogleSignIn = async () => {
+    setLoading(true);
+    setError('');
+
+    try {
+      const provider = new GoogleAuthProvider();
+      provider.addScope('email');
+      provider.addScope('profile');
+      
+      const result = await signInWithPopup(auth, provider);
+      console.log('Google sign-in successful:', result.user);
+      navigate('/');
+    } catch (error) {
+      console.error('Google sign-in error:', error);
+      setError('Failed to sign in with Google. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -104,6 +124,30 @@ const Login = () => {
               sx={{ mt: 3, mb: 2, height: 48 }}
             >
               {loading ? <CircularProgress size={24} /> : t('auth.login')}
+            </Button>
+
+            <Button
+              fullWidth
+              variant="outlined"
+              disabled={loading}
+              onClick={handleGoogleSignIn}
+              sx={{ 
+                mb: 2, 
+                height: 48,
+                border: '2px solid #4285f4',
+                color: '#4285f4',
+                '&:hover': {
+                  backgroundColor: '#4285f4',
+                  color: 'white'
+                }
+              }}
+            >
+              <img 
+                src="https://developers.google.com/identity/images/g-logo.png" 
+                alt="Google" 
+                style={{ width: 20, height: 20, marginRight: 8 }}
+              />
+              Sign in with Google
             </Button>
             
             <Box textAlign="center">

@@ -40,7 +40,7 @@ const Navbar = ({ user }) => {
   const handleLanguageChange = (event) => {
     const newLanguage = event.target.value;
     i18n.changeLanguage(newLanguage);
-    localStorage.setItem('turtlevale-language', newLanguage);
+    localStorage.setItem('turtelli-language', newLanguage);
   };
 
   const handleMenu = (event) => {
@@ -122,7 +122,7 @@ const Navbar = ({ user }) => {
       <Toolbar>
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
           <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>
-            Turtlevale
+            Turtelli
           </Link>
         </Typography>
 

@@ -22,6 +22,8 @@ import Settings from './components/Settings';
 import Dashboard from './components/Dashboard';
 import Login from './components/Auth/Login';
 import Signup from './components/Auth/Signup';
+import Privacy from './components/Privacy';
+import Terms from './components/Terms';
 import ProtectedRoute from './components/ProtectedRoute';
 
 // Create theme
@@ -105,17 +107,17 @@ function App() {
               </ProtectedRoute>
             } />
             
-            <Route path="/portfolio/:market" element={
-              <ProtectedRoute user={user}>
-                <Portfolio />
-              </ProtectedRoute>
-            } />
+            <Route path="/portfolio/:market" element={<Portfolio />} />
+            <Route path="/portfolio/indices" element={<Portfolio />} />
+            <Route path="/portfolio/stocks" element={<Portfolio />} />
+            <Route path="/portfolio/forex" element={<Portfolio />} />
+            <Route path="/portfolio/crypto" element={<Portfolio />} />
+            <Route path="/portfolio/all-markets" element={<Portfolio />} />
             
-            <Route path="/subscription" element={
-              <ProtectedRoute user={user}>
-                <Subscription />
-              </ProtectedRoute>
-            } />
+            <Route path="/subscription" element={<Subscription />} />
+            
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
             
             <Route path="/settings" element={
               <ProtectedRoute user={user}>
