@@ -2,14 +2,15 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBLZ46AonJ8SzMzljTH9MVoIYNpSwROsRk",
-  authDomain: "turtletrader-295e8.firebaseapp.com",
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
   projectId: "turtletrader-295e8",
-  storageBucket: "turtletrader-295e8.firebasestorage.app",
-  messagingSenderId: "1070046892622",
-  appId: "1:1070046892622:web:defd397e1c90b14d03691f"
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID"
 };
 
 const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-export const db = getFirestore(app);
+export { app, db };
