@@ -1,0 +1,287 @@
+[debug] [2025-06-29T14:18:15.229Z] ----------------------------------------------------------------------
+[debug] [2025-06-29T14:18:15.235Z] Command:       /usr/local/bin/firebase /Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase emulators:start
+[debug] [2025-06-29T14:18:15.235Z] CLI Version:   14.9.0
+[debug] [2025-06-29T14:18:15.235Z] Platform:      darwin
+[debug] [2025-06-29T14:18:15.235Z] Node Version:  v20.18.2
+[debug] [2025-06-29T14:18:15.236Z] Time:          Sun Jun 29 2025 21:18:15 GMT+0700 (Indochina Time)
+[debug] [2025-06-29T14:18:15.237Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-29T14:18:15.548Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-29T14:18:15.550Z] > authorizing via signed-in user (nawabbshahid069@gmail.com)
+[debug] [2025-06-29T14:18:15.743Z] openjdk version "17.0.15" 2025-04-15
+OpenJDK Runtime Environment Homebrew (build 17.0.15+0)
+OpenJDK 64-Bit Server VM Homebrew (build 17.0.15+0, mixed mode, sharing)
+
+[debug] [2025-06-29T14:18:15.747Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: functions, firestore, hosting, pubsub, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, hosting, pubsub, extensions"}}
+[debug] [2025-06-29T14:18:15.751Z] Checked if tokens are valid: true, expires at: 1751209801325
+[debug] [2025-06-29T14:18:15.752Z] Checked if tokens are valid: true, expires at: 1751209801325
+[debug] [2025-06-29T14:18:15.753Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/turtletrader-295e8 [none]
+[debug] [2025-06-29T14:18:16.912Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/turtletrader-295e8 200
+[debug] [2025-06-29T14:18:16.914Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/turtletrader-295e8 {"projectNumber":"1070046892622","projectId":"turtletrader-295e8","lifecycleState":"ACTIVE","name":"TurtleTrader","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-09T13:35:48.007006Z"}
+[debug] [2025-06-29T14:18:18.384Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-29T14:18:18.384Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-29T14:18:18.384Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-29T14:18:18.384Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-29T14:18:18.384Z] [pubsub] Pub/Sub Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-29T14:18:18.385Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5004}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-06-29T14:18:18.390Z] [hub] writing locator at /var/folders/b5/k5hjscr145726v9q03l3sz7h0000gn/T/hub-turtletrader-295e8.json
+[debug] [2025-06-29T14:18:18.398Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-06-29T14:18:19.001Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-29T14:18:19.001Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-29T14:18:19.001Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-29T14:18:19.001Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5004}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, database, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, database, storage, dataconnect\u001b[22m"}}
+[debug] [2025-06-29T14:18:19.015Z] defaultcredentials: writing to file /Users/n3ils/.config/firebase/nawabbshahid069_gmail_com_application_default_credentials.json
+[debug] [2025-06-29T14:18:19.018Z] Setting GAC to /Users/n3ils/.config/firebase/nawabbshahid069_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/n3ils/.config/firebase/nawabbshahid069_gmail_com_application_default_credentials.json"}}
+[debug] [2025-06-29T14:18:19.018Z] Checked if tokens are valid: true, expires at: 1751209801325
+[debug] [2025-06-29T14:18:19.018Z] Checked if tokens are valid: true, expires at: 1751209801325
+[debug] [2025-06-29T14:18:19.018Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/turtletrader-295e8/adminSdkConfig [none]
+[debug] [2025-06-29T14:18:19.489Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/turtletrader-295e8/adminSdkConfig 200
+[debug] [2025-06-29T14:18:19.490Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/turtletrader-295e8/adminSdkConfig {"projectId":"turtletrader-295e8","storageBucket":"turtletrader-295e8.firebasestorage.app"}
+[warn] ⚠  firestore: Cloud Firestore Emulator does not support multiple databases yet. {"metadata":{"emulator":{"name":"firestore"},"message":"Cloud Firestore Emulator does not support multiple databases yet."}}
+[warn] ⚠  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
+[warn] ⚠  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2025-06-29T14:18:19.532Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-06-29T14:18:19.532Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-06-29T14:18:19.533Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/n3ils/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","turtletrader-295e8","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/n3ils/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"turtletrader-295e8\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2025-06-29T14:18:20.132Z] Jun 29, 2025 9:18:20 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 29, 2025 9:18:20 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-06-29T14:18:20.144Z] API endpoint: http://127.0.0.1:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080"}}
+[debug] [2025-06-29T14:18:20.145Z] 
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-06-29T14:18:20.147Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2025-06-29T14:18:20.147Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-06-29T14:18:20.147Z] Starting Pub/Sub Emulator with command {"binary":"/Users/n3ils/.cache/firebase/emulators/pubsub-emulator-0.8.14/pubsub-emulator/bin/cloud-pubsub-emulator","args":["--host=127.0.0.1","--port=8085"],"optionalArgs":["port","host"],"joinArgs":true,"shell":true,"port":8085} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"/Users/n3ils/.cache/firebase/emulators/pubsub-emulator-0.8.14/pubsub-emulator/bin/cloud-pubsub-emulator\",\"args\":[\"--host=127.0.0.1\",\"--port=8085\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true,\"shell\":true,\"port\":8085}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[debug] [2025-06-29T14:18:20.368Z] This is the Google Pub/Sub fake.
+Implementation may be incomplete or differ from the real system.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"This is the Google Pub/Sub fake.\nImplementation may be incomplete or differ from the real system.\n"}}
+[debug] [2025-06-29T14:18:20.393Z] Jun 29, 2025 9:18:20 PM com.google.cloud.pubsub.testing.v1.Main main
+INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Jun 29, 2025 9:18:20 PM com.google.cloud.pubsub.testing.v1.Main main\nINFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported\n"}}
+[debug] [2025-06-29T14:18:20.472Z] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"SLF4J: Failed to load class \"org.slf4j.impl.StaticLoggerBinder\".\nSLF4J: Defaulting to no-operation (NOP) logger implementation\nSLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\n"}}
+[debug] [2025-06-29T14:18:20.674Z] Jun 29, 2025 9:18:20 PM com.google.cloud.pubsub.testing.v1.Main main
+INFO: Server started, listening on 8085
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Jun 29, 2025 9:18:20 PM com.google.cloud.pubsub.testing.v1.Main main\nINFO: Server started, listening on 8085\n"}}
+[debug] [2025-06-29T14:18:20.761Z] Checked if tokens are valid: true, expires at: 1751209801325
+[debug] [2025-06-29T14:18:20.761Z] Checked if tokens are valid: true, expires at: 1751209801325
+[debug] [2025-06-29T14:18:20.761Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/turtletrader-295e8/sites 
+[debug] [2025-06-29T14:18:21.721Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/turtletrader-295e8/sites 200
+[debug] [2025-06-29T14:18:21.722Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/turtletrader-295e8/sites {"sites":[{"name":"projects/turtletrader-295e8/sites/turtletrader-295e8","defaultUrl":"https://turtletrader-295e8.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-29T14:18:21.723Z] Checked if tokens are valid: true, expires at: 1751209801325
+[debug] [2025-06-29T14:18:21.723Z] Checked if tokens are valid: true, expires at: 1751209801325
+[debug] [2025-06-29T14:18:21.723Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/turtletrader-295e8/webApps/-/config [none]
+[debug] [2025-06-29T14:18:22.501Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/turtletrader-295e8/webApps/-/config 200
+[debug] [2025-06-29T14:18:22.501Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/turtletrader-295e8/webApps/-/config {"projectId":"turtletrader-295e8","appId":"1:1070046892622:web:defd397e1c90b14d03691f","storageBucket":"turtletrader-295e8.firebasestorage.app","apiKey":"AIzaSyBLZ46AonJ8SzMzljTH9MVoIYNpSwROsRk","authDomain":"turtletrader-295e8.firebaseapp.com","messagingSenderId":"1070046892622","measurementId":"G-Z9SXJ88GW4"}
+[debug] [2025-06-29T14:18:22.520Z] Checked if tokens are valid: true, expires at: 1751209801325
+[debug] [2025-06-29T14:18:22.521Z] Checked if tokens are valid: true, expires at: 1751209801325
+[debug] [2025-06-29T14:18:22.528Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/turtletrader-295e8 [none]
+[debug] [2025-06-29T14:18:22.847Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/turtletrader-295e8 200
+[debug] [2025-06-29T14:18:22.848Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/turtletrader-295e8 {"projectId":"turtletrader-295e8","projectNumber":"1070046892622","displayName":"TurtleTrader","name":"projects/turtletrader-295e8","resources":{"hostingSite":"turtletrader-295e8"},"state":"ACTIVE","etag":"1_2797d472-6e9f-437d-babb-c36a35e4ff09"}
+[info] i  hosting[turtletrader-295e8]: Serving hosting files from: client/build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mclient/build\u001b[22m"}}
+[info] ✔  hosting[turtletrader-295e8]: Local server: http://127.0.0.1:5004 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5004\u001b[22m\u001b[24m"}}
+[debug] [2025-06-29T14:18:23.027Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "/Users/n3ils/Sites/TurtleTrader/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/n3ils/Sites/TurtleTrader/functions\" for Cloud Functions..."}}
+[debug] [2025-06-29T14:18:23.037Z] Validating nodejs source
+[debug] [2025-06-29T14:18:23.040Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync npm Unknown system error -8
+    at Object.spawnSync (node:internal/child_process:1123:20)
+    at Object.spawnSync (node:child_process:877:24)
+    at Object.spawnSync (pkg/prelude/bootstrap.js:2092:31)
+    at Function.spawnSync [as sync] (/Users/n3ils/.cache/firebase/tools/lib/node_modules/cross-spawn/index.js:26:23)
+    at Object.getLatestSDKVersion (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/versioning.js:74:32)
+    at Delegate.validate (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:313:35)
+    at async FunctionsEmulator.loadTriggers (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:353:34)
+    at async FunctionsEmulator.connect (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:279:13)
+[debug] [2025-06-29T14:18:23.042Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^5.7.3"
+  },
+  "private": true
+}
+[debug] [2025-06-29T14:18:23.042Z] Building nodejs source
+[debug] [2025-06-29T14:18:23.043Z] Failed to find version of module node: reached end of search path /Users/n3ils/Sites/TurtleTrader/functions/node_modules
+[warn] ⚠  functions: You've requested "node" version "22", but the standalone Firebase CLI comes with bundled Node "20". 
+[info] ✔  functions: To use a different Node.js version, consider removing the standalone Firebase CLI and switching to "firebase-tools" on npm. 
+[debug] [2025-06-29T14:18:23.046Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-29T14:18:23.059Z] Found firebase-functions binary at '/Users/n3ils/Sites/TurtleTrader/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8393
+
+[debug] [2025-06-29T14:18:24.063Z] Got response from /__/functions.yaml {"endpoints":{"generateSignals":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"scheduleTrigger":{"schedule":"*/10 * * * *","retryConfig":{"retryCount":null,"maxDoublings":null,"maxRetryDuration":null,"maxBackoffDuration":null,"minBackoffDuration":null},"timeZone":"America/New_York"},"labels":{},"entryPoint":"generateSignals"},"manualGenerateSignals":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"manualGenerateSignals"},"simulateTrade":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.create","eventFilters":{"resource":"projects/turtletrader-295e8/databases/(default)/documents/signals/{signalId}"},"retry":false},"labels":{},"entryPoint":"simulateTrade"}},"specVersion":"v1alpha1","requiredAPIs":[{"api":"cloudscheduler.googleapis.com","reason":"Needed for scheduled functions."}],"extensions":{}}
+[debug] [2025-06-29T14:18:28.146Z] defaultcredentials: writing to file /Users/n3ils/.config/firebase/nawabbshahid069_gmail_com_application_default_credentials.json
+[debug] [2025-06-29T14:18:28.146Z] Setting GAC to /Users/n3ils/.config/firebase/nawabbshahid069_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/n3ils/.config/firebase/nawabbshahid069_gmail_com_application_default_credentials.json"}}
+[info] ✔  functions: Loaded functions definitions from source: generateSignals, manualGenerateSignals, simulateTrade. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generateSignals, manualGenerateSignals, simulateTrade."}}
+[debug] [2025-06-29T14:18:28.150Z] addPubsubTrigger {"eventTrigger":{"eventType":"pubsub","resource":""}}
+[debug] [2025-06-29T14:18:28.150Z] [pubsub] addTrigger(firebase-schedule-generateSignals, us-central1-generateSignals-0, event)
+[debug] [2025-06-29T14:18:28.151Z] [pubsub] Creating topic: firebase-schedule-generateSignals
+[debug] [2025-06-29T14:18:28.289Z] Jun 29, 2025 9:18:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Jun 29, 2025 9:18:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2025-06-29T14:18:28.354Z] [pubsub] Creating sub for topic: firebase-schedule-generateSignals
+[info] ✔  functions[us-central1-generateSignals]: pubsub function initialized. {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mpubsub\u001b[22m function initialized."}}
+[info] ✔  functions[us-central1-manualGenerateSignals]: http function initialized (http://127.0.0.1:5001/turtletrader-295e8/us-central1/manualGenerateSignals). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/turtletrader-295e8/us-central1/manualGenerateSignals)."}}
+[debug] [2025-06-29T14:18:28.373Z] addFirestoreTrigger "{\"eventTrigger\":{\"eventType\":\"providers/cloud.firestore/eventTypes/document.create\",\"resource\":\"projects/turtletrader-295e8/databases/(default)/documents/signals/{signalId}\",\"service\":\"firestore.googleapis.com\"}}"
+[debug] [2025-06-29T14:18:28.374Z] >>> [apiv2][query] PUT http://127.0.0.1:8080/emulator/v1/projects/turtletrader-295e8/triggers/us-central1-simulateTrade-0 [none]
+[debug] [2025-06-29T14:18:28.374Z] >>> [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/turtletrader-295e8/triggers/us-central1-simulateTrade-0 "{\"eventTrigger\":{\"eventType\":\"providers/cloud.firestore/eventTypes/document.create\",\"resource\":\"projects/turtletrader-295e8/databases/(default)/documents/signals/{signalId}\",\"service\":\"firestore.googleapis.com\"}}"
+[debug] [2025-06-29T14:18:28.385Z] Jun 29, 2025 9:18:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 29, 2025 9:18:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-06-29T14:18:28.461Z] Jun 29, 2025 9:18:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 29, 2025 9:18:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2025-06-29T14:18:28.718Z] <<< [apiv2][status] PUT http://127.0.0.1:8080/emulator/v1/projects/turtletrader-295e8/triggers/us-central1-simulateTrade-0 200
+[debug] [2025-06-29T14:18:28.719Z] <<< [apiv2][body] PUT http://127.0.0.1:8080/emulator/v1/projects/turtletrader-295e8/triggers/us-central1-simulateTrade-0 {}
+[info] ✔  functions[us-central1-simulateTrade]: firestore function initialized. {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mfirestore\u001b[22m function initialized."}}
+[debug] [2025-06-29T14:18:28.725Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator   │ Host:Port      │ View in Emulator UI              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore  │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Hosting    │ 127.0.0.1:5004 │ n/a                              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Pub/Sub    │ 127.0.0.1:8085 │ n/a                              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-06-29T14:19:27.723Z] [work-queue] {"queuedWork":["/turtletrader-295e8/us-central1/manualGenerateSignals-2025-06-29T14:19:27.722Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-29T14:19:27.733Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/turtletrader-295e8/us-central1/manualGenerateSignals-2025-06-29T14:19:27.722Z"],"workRunningCount":1}
+[debug] [2025-06-29T14:19:27.733Z] Accepted request GET /turtletrader-295e8/us-central1/manualGenerateSignals --> us-central1-manualGenerateSignals
+[debug] [2025-06-29T14:19:27.751Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-06-29T14:19:27.753Z] [functions] Got req.url=/turtletrader-295e8/us-central1/manualGenerateSignals, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/turtletrader-295e8/us-central1/manualGenerateSignals, mapping to path=/"}}
+[debug] [2025-06-29T14:19:27.760Z] [worker-pool] addWorker(us-central1-manualGenerateSignals) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-manualGenerateSignals)"}}
+[debug] [2025-06-29T14:19:27.761Z] [worker-pool] Adding worker with key us-central1-manualGenerateSignals, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-manualGenerateSignals, total=1"}}
+[debug] [2025-06-29T14:19:28.730Z] [runtime-status] [16355] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2025-06-29T14:19:28.731Z] [runtime-status] [16355] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2025-06-29T14:19:28.731Z] [runtime-status] [16355] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2025-06-29T14:19:28.731Z] [runtime-status] [16355] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2025-06-29T14:19:28.925Z] [runtime-status] [16355] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] Checked functions.config() {\"config\":{}}"}}
+[debug] [2025-06-29T14:19:28.925Z] [runtime-status] [16355] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.3.2","resolution":"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-functions/lib/v2/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-functions/lib/v2/index.js\"}}"}}
+[debug] [2025-06-29T14:19:28.926Z] [runtime-status] [16355] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2025-06-29T14:19:28.928Z] [runtime-status] [16355] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2025-06-29T14:19:28.929Z] [runtime-status] [16355] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.3.2","resolution":"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-functions/lib/v2/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.3.2\",\"resolution\":\"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-functions/lib/v2/index.js\"}"}}
+[debug] [2025-06-29T14:19:28.930Z] [runtime-status] [16355] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/n3ils/Sites/TurtleTrader/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2025-06-29T14:19:28.978Z] [runtime-status] [16355] initializeApp(DEFAULT) {"storageBucket":"turtletrader-295e8.firebasestorage.app","projectId":"turtletrader-295e8"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] initializeApp(DEFAULT) {\"storageBucket\":\"turtletrader-295e8.firebasestorage.app\",\"projectId\":\"turtletrader-295e8\"}"}}
+[debug] [2025-06-29T14:19:28.987Z] [runtime-status] [16355] Functions runtime initialized. {"cwd":"/Users/n3ils/Sites/TurtleTrader/functions","node_version":"20.18.2"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] Functions runtime initialized. {\"cwd\":\"/Users/n3ils/Sites/TurtleTrader/functions\",\"node_version\":\"20.18.2\"}"}}
+[debug] [2025-06-29T14:19:28.988Z] [runtime-status] [16355] Listening to port: /var/folders/b5/k5hjscr145726v9q03l3sz7h0000gn/T/fire_emu_5fa7305cb78b04aa.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[runtime-status] [16355] Listening to port: /var/folders/b5/k5hjscr145726v9q03l3sz7h0000gn/T/fire_emu_5fa7305cb78b04aa.sock"}}
+[debug] [2025-06-29T14:19:29.095Z] [worker-us-central1-manualGenerateSignals-2b93af8b-16cb-49e3-a588-ab233726de4a]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[worker-us-central1-manualGenerateSignals-2b93af8b-16cb-49e3-a588-ab233726de4a]: IDLE"}}
+[debug] [2025-06-29T14:19:29.095Z] [worker-pool] submitRequest(triggerId=us-central1-manualGenerateSignals) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-manualGenerateSignals)"}}
+[info] i  functions: Beginning execution of "us-central1-manualGenerateSignals" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"Beginning execution of \"us-central1-manualGenerateSignals\""}}
+[debug] [2025-06-29T14:19:29.098Z] [worker-us-central1-manualGenerateSignals-2b93af8b-16cb-49e3-a588-ab233726de4a]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[worker-us-central1-manualGenerateSignals-2b93af8b-16cb-49e3-a588-ab233726de4a]: BUSY"}}
+[info] >  Manual signal generation triggered. {"user":"Manual signal generation triggered.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"\u001b[90m> \u001b[39m Manual signal generation triggered."}}
+[info] >  Fetching SPY: {"Information":"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints"} {"user":"Fetching SPY: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"\u001b[90m> \u001b[39m Fetching SPY: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}"}}
+[info] >  Fetching QQQ: {"Information":"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints"} {"user":"Fetching QQQ: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"\u001b[90m> \u001b[39m Fetching QQQ: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}"}}
+[info] >  Fetching DIA: {"Information":"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints"} {"user":"Fetching DIA: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"\u001b[90m> \u001b[39m Fetching DIA: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}"}}
+[info] >  Fetching IWM: {"Information":"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints"} {"user":"Fetching IWM: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"\u001b[90m> \u001b[39m Fetching IWM: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}"}}
+[info] >  Fetching VTI: {"Information":"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints"} {"user":"Fetching VTI: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"\u001b[90m> \u001b[39m Fetching VTI: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}"}}
+[info] >  Fetching EEM: {"Information":"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints"} {"user":"Fetching EEM: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"\u001b[90m> \u001b[39m Fetching EEM: {\"Information\":\"Thank you for using Alpha Vantage! This is a premium endpoint. You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly unlock all premium endpoints\"}"}}
+[error] i  Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"Your function timed out after ~60s. To configure this timeout, see\n      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation."}}
+[error] i  Request to function failed: Error: socket hang up {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"Request to function failed: Error: socket hang up"}}
+[debug] [2025-06-29T14:20:29.120Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-06-29T14:20:29.138Z] [worker-us-central1-manualGenerateSignals-2b93af8b-16cb-49e3-a588-ab233726de4a]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[worker-us-central1-manualGenerateSignals-2b93af8b-16cb-49e3-a588-ab233726de4a]: exited"}}
+[debug] [2025-06-29T14:20:29.139Z] [worker-us-central1-manualGenerateSignals-2b93af8b-16cb-49e3-a588-ab233726de4a]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-manualGenerateSignals"},"extension":{},"message":"[worker-us-central1-manualGenerateSignals-2b93af8b-16cb-49e3-a588-ab233726de4a]: FINISHED"}}
+[debug] [2025-06-29T14:20:48.364Z] File /Users/n3ils/Sites/TurtleTrader/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/n3ils/Sites/TurtleTrader/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2025-06-29T14:20:49.373Z] Validating nodejs source
+[debug] [2025-06-29T14:20:49.404Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync npm Unknown system error -8
+    at Object.spawnSync (node:internal/child_process:1123:20)
+    at Object.spawnSync (node:child_process:877:24)
+    at Object.spawnSync (pkg/prelude/bootstrap.js:2092:31)
+    at Function.spawnSync [as sync] (/Users/n3ils/.cache/firebase/tools/lib/node_modules/cross-spawn/index.js:26:23)
+    at Object.getLatestSDKVersion (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/versioning.js:74:32)
+    at Delegate.validate (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/functions/runtimes/node/index.js:86:20)
+    at FunctionsEmulator.discoverTriggers (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:313:35)
+    at async FunctionsEmulator.loadTriggers (/Users/n3ils/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:353:34)
+[debug] [2025-06-29T14:20:49.407Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^5.7.3"
+  },
+  "private": true
+}
+[debug] [2025-06-29T14:20:49.407Z] Building nodejs source
+[debug] [2025-06-29T14:20:49.408Z] Failed to find version of module node: reached end of search path /Users/n3ils/Sites/TurtleTrader/functions/node_modules
+[warn] ⚠  functions: You've requested "node" version "22", but the standalone Firebase CLI comes with bundled Node "20". 
+[info] ✔  functions: To use a different Node.js version, consider removing the standalone Firebase CLI and switching to "firebase-tools" on npm. 
+[debug] [2025-06-29T14:20:49.412Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-29T14:20:49.423Z] Found firebase-functions binary at '/Users/n3ils/Sites/TurtleTrader/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8258
+
+[debug] [2025-06-29T14:20:50.403Z] Got response from /__/functions.yaml {"endpoints":{"generateSignals":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"scheduleTrigger":{"schedule":"*/10 * * * *","retryConfig":{"retryCount":null,"maxDoublings":null,"maxRetryDuration":null,"maxBackoffDuration":null,"minBackoffDuration":null},"timeZone":"America/New_York"},"labels":{},"entryPoint":"generateSignals"},"manualGenerateSignals":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"manualGenerateSignals"},"simulateTrade":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.create","eventFilters":{"resource":"projects/turtletrader-295e8/databases/(default)/documents/signals/{signalId}"},"retry":false},"labels":{},"entryPoint":"simulateTrade"}},"specVersion":"v1alpha1","requiredAPIs":[{"api":"cloudscheduler.googleapis.com","reason":"Needed for scheduled functions."}],"extensions":{}}
+[debug] [2025-06-29T14:20:54.480Z] defaultcredentials: writing to file /Users/n3ils/.config/firebase/nawabbshahid069_gmail_com_application_default_credentials.json
+[debug] [2025-06-29T14:20:54.481Z] Setting GAC to /Users/n3ils/.config/firebase/nawabbshahid069_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/n3ils/.config/firebase/nawabbshahid069_gmail_com_application_default_credentials.json"}}
+[info] ✔  functions: Loaded functions definitions from source: generateSignals, manualGenerateSignals, simulateTrade. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generateSignals, manualGenerateSignals, simulateTrade."}}

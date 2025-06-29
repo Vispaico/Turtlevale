@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, Container } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
 import Dashboard from './pages/Dashboard';
 import PortfolioMain from './pages/PortfolioMain';
 import PortfolioSmall from './pages/PortfolioSmall';
