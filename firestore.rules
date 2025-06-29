@@ -1,43 +1,21 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Public access for signals and portfolios
     match /signals/{signalId} {
       allow read: if true;
       allow write: if false;
     }
-    
-    match /portfolios/{market} {
-      allow read: if true;
-      allow write: if false;
-    }
-    
     match /simulated_trades/{tradeId} {
       allow read: if true;
       allow write: if false;
     }
-    
+    match /portfolios/{market} {
+      allow read: if true;
+      allow write: if false;
+    }
     match /markets/{marketId} {
       allow read: if true;
       allow write: if false;
     }
-    
-    match /markets_data/{dataId} {
-      allow read: if true;
-      allow write: if false;
-    }
-    
-    // User-specific data
-    match /users/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
-    }
-    
-    match /trades/{tradeId} {
-      allow read, write: if request.auth != null && request.auth.uid == resource.data.user_id;
-    }
-    
-    match /notifications/{notificationId} {
-      allow read, write: if request.auth != null && request.auth.uid == resource.data.user_id;
-    }
   }
-} 
+}
